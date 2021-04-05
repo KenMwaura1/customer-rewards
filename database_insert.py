@@ -9,8 +9,6 @@ from config import engine, meta, Base, session
 
 load_dotenv()
 # get the environment values from the .env file
-at_username = os.getenv('at_username')
-at_api_key = os.getenv('at_api_key')
 phone_number = os.getenv('phone_number')
 
 
