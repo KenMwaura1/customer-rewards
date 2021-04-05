@@ -36,7 +36,7 @@ class Sales_Transaction(Base):
 
 Base.metadata.create_all(engine)
 
-temp = Customers(phone_number=PhoneNumber(f'phone_number', 'KE'))
+temp = Customers(phone_number=PhoneNumber(f'{phone_number}', 'KE'))
 c1 = Customers(customer_id=2, customer_first_name='ken',
                customer_last_name='mwaura', _phonenumber=temp.phone_number.e164)
 c2 = Customers(customer_id=3, customer_first_name='zoo',
@@ -54,6 +54,6 @@ s.commit()
 s.close()
 """
 
-session.add_all([c1, c2, s2, s3])
+session.add_all([s2, s3])
 session.commit()
 session.close()
