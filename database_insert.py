@@ -41,9 +41,9 @@ c2 = Customers(customer_id=3, customer_first_name='zoo',
                customer_last_name='mwaura',
                _phonenumber=temp.phone_number.e164)
 s2 = Sales_Transaction(customer_id=c1.customer_id,
-                       transaction_price=3000, transaction_date=dt.date(2021, 4, 11))
-s3 = Sales_Transaction(customer_id=c2.customer_id, transaction_price=6000,
-                       transaction_date=dt.date.today())
+                       transaction_price=5000, transaction_date=dt.date(2021, 4, 10))
+s3 = Sales_Transaction(customer_id=c2.customer_id, transaction_price=2500,
+                       transaction_date=dt.date(2021, 4, 10))
 """ 
 s.add(c1)
 s.add(c2)
