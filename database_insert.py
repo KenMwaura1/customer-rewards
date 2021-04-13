@@ -1,11 +1,10 @@
 from sqlalchemy import Column, Integer, String, Unicode, ForeignKey, DateTime
 import sqlalchemy as sa
-import datetime as dt
 from sqlalchemy_utils import PhoneNumber
-
+import datetime as dt
 import os
 from dotenv import load_dotenv
-from config import engine, meta, Base, session
+from config import engine, Base, session
 
 load_dotenv()
 # get the environment values from the .env file
