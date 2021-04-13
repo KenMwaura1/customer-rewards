@@ -2,13 +2,11 @@ from sqlalchemy import Column, Integer, String, Unicode, ForeignKey, DateTime
 import sqlalchemy as sa
 from sqlalchemy_utils import PhoneNumber
 import datetime as dt
-import os
-from dotenv import load_dotenv
+
 from config import engine, Base, session
 
-load_dotenv()
 # get the environment values from the .env file
-phone_number = os.getenv('phone_number')
+phone_number = '0719702373'
 
 
 class Customers(Base):
