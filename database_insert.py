@@ -43,13 +43,6 @@ s2 = Sales_Transaction(customer_id=c1.customer_id,
                        transaction_price=5000, transaction_date=dt.date(2021, 4, 10))
 s3 = Sales_Transaction(customer_id=c2.customer_id, transaction_price=2500,
                        transaction_date=dt.date(2021, 4, 10))
-""" 
-s.add(c1)
-s.add(c2)
-s.add(s2)
-s.commit()
-s.close()
-"""
 
 session.add_all([s2, s3])
 session.commit()
