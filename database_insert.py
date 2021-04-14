@@ -5,7 +5,7 @@ import datetime as dt
 
 from config import engine, Base, session
 
-phone_number = '0729450130'
+phone_number = '07XXXXXXX'
 
 
 class Customers(Base):
@@ -41,9 +41,10 @@ s2 = Sales_Transaction(customer_id=c1.customer_id,
 s3 = Sales_Transaction(customer_id=c2.customer_id, transaction_price=7000,
                        transaction_date=dt.date(2021, 4, 18))
 try:
-    session.add_all([c1, c2,])
+    session.add_all([c1, c2, ])
     session.add_all([s2, s3])
     session.commit()
-    session.close()
 except Exception as e:
     print(f"Exception occurred: {e}")
+
+session.close()
