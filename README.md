@@ -32,10 +32,14 @@ sdk to send airtime to each customer.
 ## Running the script 
 1. Clone the Repo
    
-        `git clone https://github.com/KenMwaura1/customer-rewards`
+   ```
+   git clone https://github.com/KenMwaura1/customer-rewards
+   ```
 2. Create a virtual environment (venv)
 
-   `python venv venv`
+   ```
+   python venv venv
+   ```
 
   - Activate the virtual environment
 
@@ -45,23 +49,32 @@ If you are using [pyenv](https://github.com/pyenv/pyenv)
 
 2a. Create a virtualenv 
 
-    `pyenv virtualenv customer-rewards`
+```
+    pyenv virtualenv customer-rewards
+```
 2b. Activate the virtualenv 
 
-    `pyenv activate customer-rewards`
+```
+pyenv activate customer-rewards
+```
 
 3. Change into the working folder. 
    
-    `cd customer-rewards`
+    ```
+    cd customer-rewards
+   ```
 
-   
 4. Create a `.env` file and add your credentials
    
-        `touch .env `
+   ```
+   touch .env 
+   ```
 
 OR Copy the included example
 
-    `cp .env-example .env `
+``` 
+cp .env-example .env 
+```
 5. Add your credentials to the .env file
 
 6. Install the required dependencies
