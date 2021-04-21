@@ -7,6 +7,8 @@ Read the accompanying article [here](https://dev.to/ken_mwaura1/automate-custome
 This is a simple script to query a postgres database for customer details and reward them with airtime
 Utilizing SqlAlchemy as the ORM and the Africas Talking python SDK to send airtime. 
 
+The aim of this project is to act as a proof of concept for automating customer rewards.
+
 ## Getting Started
 ### Points to Note 
 There are 4 main scripts in this repository: `
@@ -51,6 +53,7 @@ If you are using [pyenv](https://github.com/pyenv/pyenv)
 3. Change into the working folder. 
    
     `cd customer-rewards`
+
    
 4. Create a `.env` file and add your credentials
    
@@ -64,3 +67,15 @@ OR Copy the included example
 6. Install the required dependencies
 
         `pip Install -r requirements`
+7. First run `config.py` to ensure there parameters are correct for accessing your database.
+    ` python config.py` 
+   
+8. Run `customer-insert.py` to populate the database with sample customer and transaction data.
+    `python customer_insert.py`
+   
+9. Follow it up with `customer_search.py` to filter out and get the required customers. 
+    `python customer_search.py`
+   
+10. Finally, run `customer_rewards.py` to send out airtime rewards to the selected customers.
+
+PS: If you need further clarification, read the article or [tweet me ](https://twitter.com/Ken_Mwaura1)
