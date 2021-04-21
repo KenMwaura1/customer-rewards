@@ -65,17 +65,28 @@ OR Copy the included example
 5. Add your credentials to the .env file
 
 6. Install the required dependencies
-
-        `pip Install -r requirements`
+   ```
+   pip install -r requirements
+   ```
 7. First run `config.py` to ensure there parameters are correct for accessing your database.
-    ` python config.py` 
+   
+   ```
+   python config.py
+   ```
    
 8. Run `customer-insert.py` to populate the database with sample customer and transaction data.
-    `python customer_insert.py`
+   ```
+   python customer_insert.py
+   ```
    
 9. Follow it up with `customer_search.py` to filter out and get the required customers. 
-    `python customer_search.py`
+    ```
+   python customer_search.py
+    ```
    
 10. Finally, run `customer_rewards.py` to send out airtime rewards to the selected customers.
+    ```
+    python customer_rewards.py
+    ```
 
 PS: If you need further clarification, read the article or [tweet me ](https://twitter.com/Ken_Mwaura1)
