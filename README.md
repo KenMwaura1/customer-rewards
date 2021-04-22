@@ -27,7 +27,9 @@ sdk to send airtime to each customer.
 - An [Africas Talking account](https://account.africastalking.com/auth/register/).
     - Api Key and username from your account. Create an app and take note of the api key.
     - Additionally, you will need to request them to enable airtime access for your account. 
-    Email their airtime team for further clarification. 
+    Email their airtime team for further clarification.
+- Postgres Database
+    - This could be installed natively on your system or running in a docker container. 
       
 ## Running the script 
 1. Clone the Repo
