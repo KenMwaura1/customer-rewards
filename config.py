@@ -1,3 +1,4 @@
+from pprint import pprint
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -15,3 +16,8 @@ meta = MetaData()
 Base = declarative_base()
 Session = sessionmaker(bind=engine, autoflush=True)
 session = Session()
+
+# Database connection test 
+
+db_connect = engine.connect()
+pprint(db_connect)
