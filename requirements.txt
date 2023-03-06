@@ -2,10 +2,10 @@ africastalking==1.2.3
 certifi==2020.12.5
 chardet==4.0.0
 contextlib2==0.6.0.post1
-greenlet==1.0.0
+greenlet==2.0.2
 idna==2.10
 phonenumbers==8.12.20
-psycopg2==2.8.6
+psycopg2-binary==2.9.5
 python-dotenv==0.17.0
 requests==2.25.1
 schema==0.7.4
