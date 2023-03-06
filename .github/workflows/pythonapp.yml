@@ -43,8 +43,6 @@ jobs:
           postgresql user: postgres
           # POSTGRES_PASSWORD - superuser password
           postgresql password: postgres
-          # POSTGRES_HOST_AUTH_METHOD - authentication method for local connections
-          postgresql host auth method: trust
       - name: Config Test
         run: |
             cp .env-example .env
