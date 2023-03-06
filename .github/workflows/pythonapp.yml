@@ -17,9 +17,9 @@ jobs:
       ## python versions
         python-version: [ 3.7, 3.8, 3.9, "3.10"]
         database-name:
-          - p
-        database-password:
           - customers_db
+        database-password:
+          - postgres
         database-user:
           - postgres
         database-host:
